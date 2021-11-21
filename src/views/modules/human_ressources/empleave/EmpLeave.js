@@ -74,7 +74,7 @@ const EmpLeave = () => {
       programs &&
       programs?.loanManagement?.ProgramID !== 24 &&
       programs &&
-      programs?.loanManagementEmployee?.ProgramID === 29
+      programs?.leaveManagementEmployee?.ProgramID === 29
     ) {
       let result = empleave.filter((leave) => {
         return leave.EmployeeID === employee.EmployeeID;
