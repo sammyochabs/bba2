@@ -1,0 +1,239 @@
+// Here you can add other styles
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$dark-blue-50: #89abcd;
+$dark-blue-80: #5998c2;
+$dark-blue-100: #3c78a7;
+$royal-blue-50: #556eef;
+$royal-blue-80: #485ed7;
+$royal-blue-100: #364bb8;
+$violet-50: #8980ff;
+$violet-80: #5942bb;
+$violet-100: #6c5ce7;
+
+// Master-page header
+
+.master-page-container {
+  width: 100%;
+  .master-page-header {
+    position: relative;
+    top: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.master-page {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  align-self: center;
+  gap: 30px;
+  .calendar {
+    height: 90vh;
+    background-color: $violet-100;
+    .current-date {
+      margin: 50px 0px;
+      text-align: center;
+      h1 {
+        color: $white;
+      }
+      span {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+  .modules {
+    margin-top: 50px;
+  }
+}
+.logo-wrapper {
+  width: 100%;
+  .bba-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bba-master_logo {
+    display: block;
+    margin: 0 auto;
+    //margin-left: 50%;
+    //lign-self: center;
+  }
+
+  .bba-logo_left {
+    display: block;
+    margin: 0 auto;
+    //float: left;
+    // margin-left: 33.33%;
+    //align-self: center;
+  }
+
+  .bba-logo_right {
+    display: block;
+    margin: 0 auto;
+    //float: right;
+    //margin-top: -78px;
+    //margin-right: 33.33%;
+    background: transparent;
+
+    //align-self: center;
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    align-self: center;
+    //padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.welcome-text {
+  // color: $black;
+  // font-weight: bold;
+  text-align: center;
+  .username {
+    color: $violet-100;
+  }
+}
+
+// Modules card
+.modules-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  gap: 40px 60px;
+  .module {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    height: 114px;
+    padding: 0px 25px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    color: $white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    .module-icon {
+      position: relative;
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.4);
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .module-text {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .moduleEmptySpace {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    height: 114px;
+    padding: 0px 25px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    // color: $white;
+    // border-radius: 20px;
+    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// Settings - human ressources
+.hr-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+// Settings - human ressources - grades
+.label-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+// HR
+.custom-file-input-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #dddddd;
+  text-align: center;
+  display: flex;
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.custom-file-input {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+  display: inline-block;
+  // background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+// Notification
+.new-notif {
+  width: 10px;
+  height: 10px;
+  background-color: #39f;
+  border-radius: 10px;
+}
+
+// Profile
+.profile-avatar {
+  border-radius: 50%;
+}
+.profile-list-info {
+  list-style: none;
+  padding: 0;
+  font-size: 17px;
+}

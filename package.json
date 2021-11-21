@@ -1,0 +1,103 @@
+{
+  "name": "bba-erp",
+  "version": "1.0.0",
+  "description": "Bangladesh Bridge Authority",
+  "author": {
+    "name": "Digital Bang",
+    "url": "https://digitalbang.ma"
+  },
+  "contributors": [
+    {
+      "name": "Digital Bang Team",
+      "url": "https://digitalbang.ma"
+    }
+  ],
+  "homepage": ".",
+  "copyright": "Copyright 2021 - 2021 Bangladesh Bridge Authority",
+  "license": "BBA",
+  "private": true,
+  "dependencies": {
+    "@coreui/chartjs": "^2.0.0",
+    "@coreui/coreui-pro": "^3.4.0",
+    "@coreui/icons": "^2.0.0-rc.0",
+    "@coreui/icons-react": "^1.0.2",
+    "@coreui/react": "^3.4.0",
+    "@coreui/react-chartjs": "^1.0.1",
+    "@coreui/utils": "^1.3.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.3.2",
+    "axios": "^0.21.4",
+    "blob": "^0.1.0",
+    "classnames": "^2.2.6",
+    "codemirror": "^5.58.3",
+    "core-js": "^3.8.1",
+    "enzyme": "^3.11.0",
+    "file-saver": "^2.0.5",
+    "firebase": "8.10.0",
+    "firebase-token-generator": "^2.0.0",
+    "formik": "^2.2.6",
+    "mime": "^1.6.0",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-big-calendar": "^0.30.0",
+    "react-codemirror2": "^7.2.1",
+    "react-date-picker": "^8.3.4",
+    "react-datepicker": "^4.2.1",
+    "react-dates": "^21.8.0",
+    "react-dom": "^17.0.1",
+    "react-feather": "^2.0.9",
+    "react-google-maps": "^9.4.5",
+    "react-grid-layout": "^1.2.0",
+    "react-quill": "^2.0.0-beta.2",
+    "react-redux": "~7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^3.1.1",
+    "react-text-mask-hoc": "^0.11.0",
+    "redux": "~4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "spinkit": "~2.0.1",
+    "watchpack-chokidar2": "^2.0.1",
+    "xlsx": "^0.17.3",
+    "yup": "^0.32.8"
+  },
+  "devDependencies": {
+    "auto-changelog": "2.2.0",
+    "mutationobserver-shim": "^0.3.7",
+    "react-scripts": "^4.0.1"
+  },
+  "scripts": {
+    "proxy": "https://localhost:44342",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "clearCache": "jest --clearCache",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject",
+    "changelog": "auto-changelog --starting-version v3.0.0-beta.1 --commit-limit false --hide-credit"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  }
+}
